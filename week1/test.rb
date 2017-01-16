@@ -31,4 +31,24 @@ class FizzBuzz < Minitest::Test
     algorithm = Algorithm.new
     assert_equal("Minds", algorithm.fizz_buzz(505)) 
   end
+
+  def test_15_returns_Mined_Minds
+    algorithm = Algorithm.new
+    assert_equal("Minds", algorithm.fizz_buzz(5)) 
+  end
+
+  def test_30_returns_Mined_Minds
+    algorithm = Algorithm.new
+    assert_equal("Minds", algorithm.fizz_buzz(10)) 
+  end
+
+  def test_360_returns_Mined_Minds
+    algorithm = Algorithm.new
+    assert_equal("Minds", algorithm.fizz_buzz(505)) 
+  end
+
+  def test_two_returns_two
+    algorithm = Algorithm.new
+    assert_equal("2", algorithm.fizz_buzz(2))
+  end
 end
