@@ -3,7 +3,7 @@ require 'minitest/autorun'
 
 class FizzBuzz < Minitest::Test
   def test_returns_number
-    num = "3"
-    assert_equal("3", fizz_buzz(num))
+    algorithm = Algorithm.new
+    assert_equal(3, algorithm.fizz_buzz(3))
   end
 end
