@@ -31,4 +31,19 @@ class TestMinedMindsKata < Minitest::Test
 		up_to_number = 100
 		assert_equal("Mined", numbered_array(up_to_number)[98])
 	end
+	
+	def test_5_returns_Mined
+		up_to_number = 100
+		assert_equal("Minds", numbered_array(up_to_number)[4])
+	end
+	
+	def test_10_returns_Mined
+		up_to_number = 100
+		assert_equal("Minds", numbered_array(up_to_number)[9])
+	end
+	
+	def test_95_returns_Mined
+		up_to_number = 100
+		assert_equal("Minds", numbered_array(up_to_number)[94])
+	end
 end
