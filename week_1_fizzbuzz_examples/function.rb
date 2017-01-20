@@ -1,3 +1,4 @@
+#while loop mined minds kata
 #def numbered_array(up_to_number)
 #	new_array = []
 #	i = 1
@@ -18,21 +19,42 @@
 #	new_array
 #end
 
+#until loop mined minds kata
+#def numbered_array(up_to_number)
+#	new_array = []
+#	i = 1
+#	
+#	until(i > up_to_number)
+#		if (i % 3 == 0 && i % 5 == 0)
+#			new_array.push("Mined Minds")
+#		elsif (i % 3 == 0)
+#			new_array.push("Mined")
+#		elsif (i % 5 == 0)
+#			new_array.push("Minds")
+#		else
+#			new_array.push(i)
+#		end
+#		i += 1
+#	end
+#	
+#	new_array
+#end
+
+#splat array mined minds kata
 def numbered_array(up_to_number)
 	new_array = []
-	i = 1
+	numbered_array = [*1..up_to_number]
 	
-	until(i > up_to_number)
-		if (i % 3 == 0 && i % 5 == 0)
+	numbered_array.each do |num|
+		if (num % 3 == 0 && num % 5 == 0)
 			new_array.push("Mined Minds")
-		elsif (i % 3 == 0)
+		elsif (num % 3 == 0)
 			new_array.push("Mined")
-		elsif (i % 5 == 0)
+		elsif (num % 5 == 0)
 			new_array.push("Minds")
 		else
-			new_array.push(i)
+			new_array.push(num)
 		end
-		i += 1
 	end
 	
 	new_array
