@@ -119,20 +119,20 @@
 #end
 
 #for loop mined minds kata
-def numbered_array(up_to_number)
-	new_array = Array.new
-	
-	for num in 1..(up_to_number)
-		if (num % 3 == 0 && num % 5 == 0)
-			new_array.push("Mined Minds")
-		elsif (num % 3 == 0)
-			new_array.push("Mined")
-		elsif (num % 5 == 0)
-			new_array.push("Minds")
-		else
-			new_array.push(num)
-		end
-	end
-	
-	new_array
-end
+#def numbered_array(up_to_number)
+#	new_array = Array.new
+#	
+#	for num in 1..(up_to_number)
+#		if (num % 3 == 0 && num % 5 == 0)
+#			new_array.push("Mined Minds")
+#		elsif (num % 3 == 0)
+#			new_array.push("Mined")
+#		elsif (num % 5 == 0)
+#			new_array.push("Minds")
+#		else
+#			new_array.push(num)
+#		end
+#	end
+#	
+#	new_array
+#end
