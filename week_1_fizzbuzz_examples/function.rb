@@ -100,18 +100,37 @@
 #end
 
 #times iterator mined minds kata
+#def numbered_array(up_to_number)
+#	new_array = Array.new
+#	
+#	up_to_number.times do |num|
+#		if ((num + 1) % 3 == 0 && (num + 1) % 5 == 0)
+#			new_array.push("Mined Minds")
+#		elsif ((num + 1) % 3 == 0)
+#			new_array.push("Mined")
+#		elsif ((num + 1) % 5 == 0)
+#			new_array.push("Minds")
+#		else
+#			new_array.push((num + 1))
+#		end
+#	end
+#	
+#	new_array
+#end
+
+#for loop mined minds kata
 def numbered_array(up_to_number)
 	new_array = Array.new
 	
-	up_to_number.times do |num|
-		if ((num + 1) % 3 == 0 && (num + 1) % 5 == 0)
+	for num in 1..(up_to_number)
+		if (num % 3 == 0 && num % 5 == 0)
 			new_array.push("Mined Minds")
-		elsif ((num + 1) % 3 == 0)
+		elsif (num % 3 == 0)
 			new_array.push("Mined")
-		elsif ((num + 1) % 5 == 0)
+		elsif (num % 5 == 0)
 			new_array.push("Minds")
 		else
-			new_array.push((num + 1))
+			new_array.push(num)
 		end
 	end
 	
