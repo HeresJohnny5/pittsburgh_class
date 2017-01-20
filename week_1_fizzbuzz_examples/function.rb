@@ -61,12 +61,31 @@
 #end
 
 #to_a numbered array mined minds kata
+#def numbered_array(up_to_number)
+#	new_array = Array.new
+#	numbered_array = (1..up_to_number).to_a
+#	
+#	numbered_array.each do |num|
+#		if (num % 3 == 0 && num % 5 == 0)
+#			new_array.push("Mined Minds")
+#		elsif (num % 3 == 0)
+#			new_array.push("Mined")
+#		elsif (num % 5 == 0)
+#			new_array.push("Minds")
+#		else
+#			new_array.push(num)
+#		end
+#	end
+#	
+#	new_array
+#end
+
+#upto numbered array mined minds kata
 def numbered_array(up_to_number)
 	new_array = Array.new
-	numbered_array = (1..up_to_number).to_a
-	
-	numbered_array.each do |num|
-		if (num % 3 == 0 && num % 5 == 0)
+ 
+	1.upto(up_to_number) do |num|
+ 		if (num % 3 == 0 && num % 5 == 0)
 			new_array.push("Mined Minds")
 		elsif (num % 3 == 0)
 			new_array.push("Mined")
@@ -76,6 +95,6 @@ def numbered_array(up_to_number)
 			new_array.push(num)
 		end
 	end
-	
-	new_array
+ 
+ new_array
 end
