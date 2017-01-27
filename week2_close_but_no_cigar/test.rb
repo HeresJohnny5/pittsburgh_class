@@ -43,15 +43,33 @@ end
 # **************** NEW CLASS ****************
 # *******************************************
 class CloseByNoCigar < Minitest::Test
+  def test_5627_returns_empty_array
+    my_ticket = "1499"
+    winning_numbers_array = ["9999", "5678", "1235", "1134", "1344"]
+    assert_equal([], close_but_no_cigar(my_ticket, winning_numbers_array))
+  end
+
+  def test_5163_returns_array_with_1_index
+    my_ticket = "5668"
+    winning_numbers_array = ["9999", "5678", "1235", "1134", "1344"]
+    assert_equal(["5678"], close_but_no_cigar(my_ticket, winning_numbers_array))
+  end
+
   def test_1234_returns_array_with_2_indices
     my_ticket = "1234"
     winning_numbers_array = ["9999", "5678", "1235", "1134", "1344"]
     assert_equal(["1235", "1134"], close_but_no_cigar(my_ticket, winning_numbers_array))
   end
 
-  def test_5627_returns_empty_array
-    my_ticket = "5627"
-    winning_numbers_array = ["9999", "5678", "1235", "1134", "1344"]
-    assert_equal([], close_but_no_cigar(my_ticket, winning_numbers_array))
+  def test_6534_returns_array_with_3_indices
+    my_ticket = "6534"
+    winning_numbers_array = ["6535", "5534", "1235", "6434", "1344"]
+    assert_equal(["6535", "5534", "6434"], close_but_no_cigar(my_ticket, winning_numbers_array))
+  end
+
+  def test_6534_returns_array_with_4_indices
+    my_ticket = "5263"
+    winning_numbers_array = ["5264", "5534", "4263", "5283", "1344", "6263"]
+    assert_equal(["5264", "4263", "5283", "6263"], close_but_no_cigar(my_ticket, winning_numbers_array))
   end
 end
