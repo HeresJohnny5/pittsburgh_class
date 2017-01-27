@@ -42,3 +42,17 @@ class TestMultiplication < Minitest::Test
     assert_equal(12660, basic_multiplication(12, 5, 211))
   end
 end
+
+class TestDivision < Minitest::Test
+  def test_15_divided_by_3_equals_5
+    assert_equal(5, basic_division(15, 3))
+  end
+
+  def test_8060_divided_by_26_equals_310
+    assert_equal(310, basic_division(8060, 26))
+  end
+
+  def test_300_divided_by_5_equals_60
+    assert_equal(60, basic_division(300, 5))
+  end
+end
