@@ -19,4 +19,12 @@ class TestSubtraction < Minitest::Test
   def test_1_minus_0_equals_1
     assert_equal(1, basic_subtraction(1, 0))
   end
+
+  def test_500_minus_75_equals_425
+    assert_equal(425, basic_subtraction(500, 75))
+  end
+
+  def test_208_minus_5_equals_203
+    assert_equal(203, basic_subtraction(208, 5))
+  end
 end
