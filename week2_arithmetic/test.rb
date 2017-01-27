@@ -28,3 +28,17 @@ class TestSubtraction < Minitest::Test
     assert_equal(203, basic_subtraction(208, 5))
   end
 end
+
+class TestMultiplication < Minitest::Test
+  def test_1_times_5_times_310_equals_1550
+    assert_equal(1550, basic_multiplication(1, 5, 310))
+  end
+
+  def test_3_times_42_times_8_equals_1008
+    assert_equal(1008, basic_multiplication(3, 42, 8))
+  end
+
+  def test_12_times_5_times_211_equals_12660
+    assert_equal(12660, basic_multiplication(12, 5, 211))
+  end
+end
