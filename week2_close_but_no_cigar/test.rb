@@ -7,4 +7,16 @@ class CloseButNoCigar < Minitest::Test
     num2 = "1235"
     assert_equal(true, off_by_one?(num1, num2))
   end
+
+  def test_2435_compared_to_2435_returns_false
+    num1 = "2435"
+    num2 = "2435"
+    assert_equal(false, off_by_one?(num1, num2))
+  end
+
+  def test_1827_compared_to_1836_returns_false
+    num1 = "2435"
+    num2 = "2435"
+    assert_equal(false, off_by_one?(num1, num2))
+  end
 end
