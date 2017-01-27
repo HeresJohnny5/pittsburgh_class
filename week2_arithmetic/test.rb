@@ -1,6 +1,8 @@
 require 'minitest/autorun.rb'
 require_relative 'function.rb'
 
-class WinningNumbers < Minitest::Test
+class TestAddition < Minitest::Test
+  def test
 
+  end
 end
