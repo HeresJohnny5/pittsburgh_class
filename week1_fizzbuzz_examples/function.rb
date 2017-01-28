@@ -172,3 +172,45 @@
 #   end
 
 # end
+
+#module method mined minds kata
+# def numbered_array(up_to_number)
+# 	num_array = [*1..up_to_number]
+# 	num3 = 3
+# 	num5 = 5
+
+# 	new_array = Array.new
+
+# 	num_array.each do |num|
+# 		if (num.modulo(num3) == 0 && num.modulo(num5) == 0)
+# 			new_array << "Mined Minds"
+# 		elsif (num.modulo(num3) == 0)
+# 			new_array << "Mined"
+# 		elsif (num.modulo(num5) == 0)
+# 			new_array << "Minds"
+# 		else
+# 			new_array << num
+# 		end		
+# 	end
+
+# 	new_array 
+# end
+
+#case statement mined minds kata
+# def numbered_array(up_to_number)
+# 	num_array = [*1..up_to_number]
+
+# 	new_array = []
+
+# 	num_array.each do |num|
+# 		case
+# 			when (num % 3 == 0 && num % 5 == 0) then new_array.push("Mined Minds")
+# 			when (num % 3 == 0) then new_array.push("Mined")
+# 			when (num % 5 == 0) then new_array.push("Minds")
+# 			else
+# 				new_array.push(num)
+# 			end
+# 	end
+
+# 	new_array
+# end
