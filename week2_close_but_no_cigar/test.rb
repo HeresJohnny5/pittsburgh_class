@@ -2,9 +2,10 @@ require 'minitest/autorun'
 require_relative 'function.rb'
 
 class OffByOne < Minitest::Test
+
   def test_1234_compared_to_1235_returns_true
     num1 = "1234"
-    num2 = "1235"
+    num2 = "1238"
     assert_equal(true, off_by_one?(num1, num2))
   end
 
@@ -42,7 +43,7 @@ end
 # *******************************************
 # **************** NEW CLASS ****************
 # *******************************************
-class CloseByNoCigar < Minitest::Test
+class CloseButNoCigar < Minitest::Test
   def test_5627_returns_empty_array
     my_ticket = "1499"
     winning_numbers_array = ["9999", "5678", "1235", "1134", "1344"]
@@ -71,5 +72,28 @@ class CloseByNoCigar < Minitest::Test
     my_ticket = "5263"
     winning_numbers_array = ["5264", "5534", "4263", "5283", "1344", "6263"]
     assert_equal(["5264", "4263", "5283", "6263"], close_but_no_cigar(my_ticket, winning_numbers_array))
+  end
+end
+
+# *******************************************
+# **************** NEW CLASS ****************
+# *******************************************
+class OneFunctionCigar < Minitest::Test
+  def test_9384_returns_array_with_1_index
+    my_ticket = "9384"
+    winning_numbers_array = ["9999", "5678", "9484"]
+    assert_equal(["9484"], one_function_cigar(my_ticket, winning_numbers_array))
+  end
+
+  def test_4299_returns_array_with_2_indices
+    my_ticket = "4299"
+    winning_numbers_array = ["9999", "5678", "4199", "8374", "4298"]
+    assert_equal(["4199", "4298"], one_function_cigar(my_ticket, winning_numbers_array))
+  end
+
+  def test_6253_returns_array_with_3_indices
+    my_ticket = "6253"
+    winning_numbers_array = ["6153", "5678", "6254", "8374", "4298", "6243"]
+    assert_equal(["6153", "6254", "6243"], one_function_cigar(my_ticket, winning_numbers_array))
   end
 end
