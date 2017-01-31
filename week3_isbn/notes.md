@@ -16,19 +16,19 @@ modulo 11 of the result (with 'X' being used if the result is 10).
 * The check digit for ISBN-13 is calculated by multiplying each digit alternately by 1 or 3 (i.e., 1 x 1st digit, 3 x 2nd digit, 1 x 3rd digit, 3 x 4th digit, etc.), summing these products together, taking modulo 10 of the result and subtracting this value from 10, and then taking the modulo 10 of the result again to produce a single digit.
 
 **Examples of valid ISBN-13:**
-"9780470059029"
-"978-0-13-149505-0"
-"978 0 471 48648 0"
+  * "9780470059029"
+  * "978-0-13-149505-0"
+  * "978 0 471 48648 0"
 
 **Examples of valid ISBN-10:**
-"0471958697"
-"0-321-14653-0"
-"877195869x"
+  * "0471958697"
+  * "0-321-14653-0"
+  * "877195869x"
 
 **Examples of invalid ISBNs:**
-"4780470059029"
-"0-321@14653-0"
-"877195x869"
+  * "4780470059029"
+  * "0-321@14653-0"
+  * "877195x869"
 ""
 " "
 "-"
