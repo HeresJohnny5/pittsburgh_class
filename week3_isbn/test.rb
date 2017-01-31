@@ -95,3 +95,15 @@ class TestNumbersInMyArrayOnlyFunction < Minitest::Test
     assert_equal(true, only_numbers_in_my_array?(isbn_array))
   end
 end
+
+class TestIsbn10MathFunction< Minitest::Test
+  def test_for_10_digit_array_returns_true
+    isbn_array = ["0","4","7","1","9","5","8","6","9","7"]
+    assert_equal(true, valid_10_digit_isbn?(isbn_array))
+  end
+
+  def test_for_10_digit_array_returns_false
+    isbn_array = ["1","4","7","1","9","5","8","6","9","7"]
+    assert_equal(false, valid_10_digit_isbn?(isbn_array))
+  end                     
+end

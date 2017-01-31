@@ -38,3 +38,23 @@ def only_numbers_in_my_array?(isbn_array)
   nums_only = isbn_array.join("")
   true if nums_only =~ /\D/ 
 end
+
+def valid_10_digit_isbn?(array_of_nums)
+  #take in array of nums and return boolean
+  array =[]
+  array_of_nums.each do |value|
+    array.push(value.to_i) 
+  end
+
+  sum = 0
+  
+  array.each.with_index do |value, index|
+    if index < 9
+      sum += (value * (index + 1)) #
+    end
+  end
+
+  check_digit = sum % 11
+
+  check_digit == array[9]
+end
