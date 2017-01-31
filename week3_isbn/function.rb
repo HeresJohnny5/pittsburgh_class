@@ -58,3 +58,55 @@ def valid_10_digit_isbn?(array_of_nums)
 
   check_digit == array[9]
 end
+
+def valid_13_digit_isbn?(isbn_array_of_nums)
+  #take in array of nums and return boolean
+  array =[]
+
+  isbn_array_of_nums.each { |value| array << value.to_i }
+
+  sum = 0
+  check_digit = 0
+  
+  array.each_with_index do |value, index|
+    break if index == 12
+    if index % 2 == 0
+      sum += value * 1
+    else
+      sum += value * 3
+    end 
+  end
+
+  sum = sum % 10
+  check_digit = (10 - sum)
+  
+  if check_digit == 10
+    check_digit = 0
+  end
+    
+  array[12] == check_digit
+end
+
+def valid_isbn?(isbn_string_to_evaluate)
+  no_invalid_characters = remove_disallowed_characters_from_isbn(isbn_string_to_evaluate)
+  isbn_array = string_to_array(no_invalid_characters)
+
+  if isbn_array.length == 10 
+    x_equals_10 = update_check_digit_containing_X(isbn_array)
+      
+    if only_numbers_in_my_array?(x_equals_10) == false 
+      false
+    else
+      valid_10_digit_isbn?(x_equals_10) 
+    end
+         
+  elsif isbn_array.length == 13
+    if only_numbers_in_my_array?(isbn_array) == false 
+      false
+    else
+      valid_13_digit_isbn?(isbn_array)
+    end
+  else
+    false
+  end
+end
