@@ -12,8 +12,13 @@ def remove_disallowed_characters_from_isbn(string_num)
   disallowed_characters = [ " ", "-", "\n", "\""]
 
   disallowed_characters.each do |characters|
-      string_num.delete! characters 
+    string_num.delete!(characters) 
   end 
      
   string_num
+end
+
+def string_to_array(string)
+  #takes in string and returns array
+  string.split("")
 end

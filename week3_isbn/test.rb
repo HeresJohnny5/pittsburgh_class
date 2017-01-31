@@ -44,3 +44,20 @@ class TestDisallowedCharactersFunction < Minitest::Test
     assert_equal("5624567890", remove_disallowed_characters_from_isbn(string_num))
   end
 end
+
+class TestConvertsStringToArray < Minitest::Test
+  def test_string_returns_empty_array
+    string = ""
+    assert_equal([], string_to_array(string))
+  end
+
+  def test_12345_string_returns_array_with_12345
+    string = "12345"
+    assert_equal(["1", "2", "3", "4", "5"], string_to_array(string))
+  end
+
+  def test_4567898765325_string_returns_array_with_4567898765325
+    string = "4567898765325"
+    assert_equal(["4", "5", "6", "7", "8","9","8","7","6","5","3","2","5"], string_to_array(string))
+  end
+end
