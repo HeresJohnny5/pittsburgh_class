@@ -61,3 +61,20 @@ class TestConvertsStringToArray < Minitest::Test
     assert_equal(["4", "5", "6", "7", "8","9","8","7","6","5","3","2","5"], string_to_array(string))
   end
 end
+
+class TestReplaceXwith10Function < Minitest::Test
+  def test_array_returns_new_array_for_index_9_returns_10
+    array_test = ["0","8","0","4","4","2","9","5","7","x"]
+    assert_equal(["0","8","0","4","4","2","9","5","7","10"], update_check_digit_containing_X(array_test)) 
+  end
+
+  def test_array_returns_original_number
+    array_test = ["1","8","0","4","4","2","9","5","7","8"]
+    assert_equal(["1","8","0","4","4","2","9","5","7","8"], update_check_digit_containing_X(array_test))
+  end
+
+  def test_array_with_x_returns_original_array
+    array_test = ["2","8","0","4","x","2","9","5","7","8"]
+    assert_equal(["2","8","0","4","x","2","9","5","7","8"], update_check_digit_containing_X(array_test))
+  end
+end
