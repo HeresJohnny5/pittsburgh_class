@@ -32,3 +32,9 @@ def update_check_digit_containing_X(isbn_number_array)
   
   isbn_number_array
 end
+
+def only_numbers_in_my_array?(isbn_array)
+  #join array to apply regex functionality
+  nums_only = isbn_array.join("")
+  true if nums_only =~ /\D/ 
+end

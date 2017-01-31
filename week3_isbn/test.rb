@@ -78,3 +78,20 @@ class TestReplaceXwith10Function < Minitest::Test
     assert_equal(["2","8","0","4","x","2","9","5","7","8"], update_check_digit_containing_X(array_test))
   end
 end
+
+class TestNumbersInMyArrayOnlyFunction < Minitest::Test
+  def test_for_non_numeric_characters_in_my_array_returns_nil
+    isbn_array = ["1","2","3","4","5","6","7","8","9","0"]
+    assert_equal(nil, only_numbers_in_my_array?(isbn_array))
+  end
+
+  def test_for_non_numeric_characters_in_my_array_returns_true1
+    isbn_array = ["1","2","3","?","5","6","7","8","9","0"]
+    assert_equal(true, only_numbers_in_my_array?(isbn_array))
+  end
+
+  def test_for_non_numeric_characters_in_my_array_retruns_true2
+    isbn_array = ["n","2","3","x","5","p","7","8","9","0"]
+    assert_equal(true, only_numbers_in_my_array?(isbn_array))
+  end
+end
