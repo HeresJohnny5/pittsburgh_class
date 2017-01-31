@@ -29,18 +29,18 @@ modulo 11 of the result (with 'X' being used if the result is 10).
   * "4780470059029"
   * "0-321@14653-0"
   * "877195x869"
-""
-" "
-"-"
+  * ""
+  * " "
+  * "-"
 
-Example of how the ISBN-10 sumcheck is calculated:
+**Example of how the ISBN-10 sumcheck is calculated:**
 
-first 9 digits of an isbn10: 742139476
+* first 9 digits of an isbn10: 742139476
 
-create checksum:
-sum = 1*7 + 2*4 + 3*2 + 4*1 + 5*3 + 6*9 7*4 + 8*7 + 9*6
-sum = 7 + 8 + 6 + 4 + 15 + 54 + 28 + 56 + 54
-sum = 232
-checksum = 232%11
-checksum = 1
-isbn = 7421394761 
+**create checksum:**
+  * sum = 1*7 + 2*4 + 3*2 + 4*1 + 5*3 + 6*9 7*4 + 8*7 + 9*6
+  * sum = 7 + 8 + 6 + 4 + 15 + 54 + 28 + 56 + 54
+  * sum = 232
+  * checksum = 232%11
+  * checksum = 1
+  * isbn = 7421394761 
