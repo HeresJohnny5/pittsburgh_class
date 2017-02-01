@@ -67,16 +67,16 @@ class TestIsbn10MathFunction< Minitest::Test
   end                     
 end
  
-# class TestIsbn13MathFunction< Minitest::Test
-#   def test_for_thirteen_character_math
-#     assert_equal(true, valid_13_digit_isbn?(["9","7","8","0","1","5","6","0","2","7","3","2","8"]))
-#     assert_equal(false, valid_13_digit_isbn?(["7","8","0","6","7","0","0","2","0","4","8","5"]))
-#     assert_equal(false, valid_13_digit_isbn?(["1","3","4","5","6","7","8","9","1","1","1","1"]))
-#     assert_equal(true, valid_13_digit_isbn?(["9","7","8","0","3","0","6","4","0","6","1","5","7"]))
-#     assert_equal(true, valid_13_digit_isbn?(["9","7","8","3","1","6","1","4","8","4","1","0","0"]))
-#       assert_equal(false, valid_13_digit_isbn?(["x","7","8","3","1","6","1","4","8","4","1","0","x"]))
-#   end 
-# end
+class TestIsbn13MathFunction< Minitest::Test
+  def test_for_thirteen_character_math
+    assert_equal(true, valid_13_digit_isbn?(["9","7","8","0","1","5","6","0","2","7","3","2","8"]))
+    assert_equal(false, valid_13_digit_isbn?(["7","8","0","6","7","0","0","2","0","4","8","5"]))
+    assert_equal(false, valid_13_digit_isbn?(["1","3","4","5","6","7","8","9","1","1","1","1"]))
+    assert_equal(true, valid_13_digit_isbn?(["9","7","8","0","3","0","6","4","0","6","1","5","7"]))
+    assert_equal(true, valid_13_digit_isbn?(["9","7","8","3","1","6","1","4","8","4","1","0","0"]))
+      assert_equal(false, valid_13_digit_isbn?(["x","7","8","3","1","6","1","4","8","4","1","0","x"]))
+  end 
+end
 
 # class TestIsISBNvalid10Function< Minitest::Test
 #   def test_input_string_is_a_valid_isbn_for_10_degit
