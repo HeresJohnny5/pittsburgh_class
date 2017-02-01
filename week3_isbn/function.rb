@@ -50,7 +50,7 @@ def valid_10_digit_isbn?(array_of_nums)
   
   array.each.with_index do |value, index|
     if index < 9
-      sum += (value * (index + 1)) #
+      sum += (value * (index + 1)) 
     end
   end
 
