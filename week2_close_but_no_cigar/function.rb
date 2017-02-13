@@ -37,7 +37,6 @@ end
 =end 
 
 def one_function_cigar(my_number, winning_numbers)
-  puts winning_numbers.inspect
   winners = []
   
   winning_numbers.each do |winning_number|
@@ -51,7 +50,3 @@ def one_function_cigar(my_number, winning_numbers)
 
   winners
 end
-
-my_ticket = "6253"
-winning_numbers_array = "6153", "5678", "6254", "8374", "4298", "6243"
-one_function_cigar(my_ticket, winning_numbers_array)
