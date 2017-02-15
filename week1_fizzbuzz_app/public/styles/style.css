@@ -1,16 +1,18 @@
-button {
-  background-color: #3498db;
-  border: none;
-  border-radius: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button:hover {
-  background-color: #1f74ac;
+header, h1, ul, .user-num-input { text-align: center; }
+
+.kratos {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px #888;
+  margin: 50px 0 25px 0;
 }
 
-a {
-  font-size: 2em;
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-}
+h1, li { margin-bottom: 15px; }
+
+.animated { }
