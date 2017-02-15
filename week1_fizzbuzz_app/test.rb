@@ -19,32 +19,32 @@ class FizzBuzz < Minitest::Test
 
   def test_5_returns_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(5)) 
+    assert_equal("Minds", algorithm.fizz_buzz(5))
   end
 
   def test_10_returns_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(10)) 
+    assert_equal("Minds", algorithm.fizz_buzz(10))
   end
 
   def test_505_returns_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(505)) 
+    assert_equal("Minds", algorithm.fizz_buzz(505))
   end
 
   def test_15_returns_Mined_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(5)) 
+    assert_equal("Mined Minds", algorithm.fizz_buzz(15))
   end
 
   def test_30_returns_Mined_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(10)) 
+    assert_equal("Mined Minds", algorithm.fizz_buzz(45))
   end
 
   def test_360_returns_Mined_Minds
     algorithm = Algorithm.new
-    assert_equal("Minds", algorithm.fizz_buzz(505)) 
+    assert_equal("Mined Minds", algorithm.fizz_buzz(900))
   end
 
   def test_two_returns_two
