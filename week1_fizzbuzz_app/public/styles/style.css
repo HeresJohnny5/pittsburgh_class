@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-header, h1, ul, .user-num-input { text-align: center; }
+header, h1, ul, p, .user-num-input { text-align: center; }
+
+h1, p, li { margin-bottom: 18px; }
 
 .kratos {
   width: 250px;
@@ -13,6 +15,26 @@ header, h1, ul, .user-num-input { text-align: center; }
   margin: 50px 0 25px 0;
 }
 
-h1, li { margin-bottom: 15px; }
+input[type=submit], button > a {
+  border: none;
+  background-color: #19b999;
+  padding: 8px 10px;
+  color: #000;
+  font-family: lato;
+  font-size: 16px;
+  border-radius: 5px;
+}
 
-.animated { }
+input[type=submit]:hover, button > a:hover { background-color: #169e83; }
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+button > a { text-decoration: none; }
+
+span {
+  font-size: 20px;
+  font-style: italic;
+}
