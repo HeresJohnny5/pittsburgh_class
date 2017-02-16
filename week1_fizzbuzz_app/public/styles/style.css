@@ -15,24 +15,30 @@ h1, p, li { margin-bottom: 18px; }
   margin: 50px 0 25px 0;
 }
 
-input[type=submit], button > a {
-  border: none;
-  background-color: #19b999;
-  padding: 8px 10px;
+.submit, button {
+  border: 1px solid #008CBA;
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
   color: #000;
   font-family: lato;
   font-size: 16px;
   border-radius: 5px;
 }
 
-input[type=submit]:hover, button > a:hover { background-color: #169e83; }
+.submit:hover, button:hover {
+  background-color: #008CBA;
+}
 
 button {
   display: block;
   margin: 0 auto;
 }
 
-button > a { text-decoration: none; }
+button > a {
+  text-decoration: none;
+  color: #000;
+}
 
 span {
   font-size: 20px;
