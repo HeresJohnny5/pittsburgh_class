@@ -1,6 +1,6 @@
 #Fizzbuzz/Kata
 
-**Create a progrom that will return one of 4 possible statements depending on user input.
+**Create a progrom that will return one of 4 possible statements depending on user input.**
 
 **AIM:**
 * Create a program that will return one of 4 possible statements depending on user input.
