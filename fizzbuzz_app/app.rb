@@ -1,8 +1,6 @@
 require 'sinatra'
 require_relative 'function.rb'
 
-enable :sessions
-
 get '/' do
   erb :get_number
 end
