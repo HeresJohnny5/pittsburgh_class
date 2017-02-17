@@ -1,7 +1,7 @@
-<p>Hello <%= user_name %> what is your age?</p>
+<h1>Hello <%= user_name %> what is your age?</h1>
 
-<form action="/get_age" method="post">
+<form action="/get_age" method="post" class="get-form">
   <input type="number" name="user_age" autofocus="autofocus" placeholder="Age" required="required">
   <input type="text" name="user_name" value=<%= user_name %> hidden>
-  <input type="submit">
+  <input type="submit" class="submit">
 </form>

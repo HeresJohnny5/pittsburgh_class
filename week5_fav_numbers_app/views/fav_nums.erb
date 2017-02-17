@@ -1,10 +1,10 @@
-<p>And <%= user_name %> what are your 3 favorite numbers?</p>
+<h1>And <%= user_name %> what are your 3 favorite numbers?</h1>
 
-<form action="/fav_nums" method="post">
+<form action="/fav_nums" method="post" class="get-form">
   <p><input type="number" name="user_number1" autofocus="autofocus" placeholder="Number 1" required="required"></p>
   <p><input type="number" name="user_number2" placeholder="Number 2" required="required"></p>
   <p><input type="number" name="user_number3" placeholder="Number 3" required="required"></p>
   <input type="number" name="user_age" value=<%= user_age %> hidden>
   <input type="text" name="user_name" value=<%= user_name %> hidden>
-  <input type="submit">
+  <input type="submit" class="submit">
 </form>
