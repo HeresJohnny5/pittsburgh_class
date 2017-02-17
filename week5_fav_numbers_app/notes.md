@@ -1,6 +1,7 @@
 #Favorite Numbers App/Kata
 
-**Create a app using Sinatra which will accept/pass variables using locals. This example uses *hidden input fields*. Create 4 views**
+**Create a app using Sinatra which will accept/pass variables using locals. This example uses _hidden input fields_. Create 4 views**
+
 1. Ask the user their name
 2. Call the user by their name, asking the user for their age
 3. Call the user by their name, asking the user for their 3 favorite numbers
