@@ -51,15 +51,15 @@ class TestReplaceXwith10Function < Minitest::Test
   end
 end
 
-class TestNumbersInMyArrayOnlyFunction< Minitest::Test
+class TestNumbersInMyArrayOnlyFunction < Minitest::Test
   def test_for_non_numeric_characters_in_my_array?
-    assert_equal(nil, only_numbers_in_my_array?(["1","2","3","4","5","6","7","8","9","0"]))
+    assert_nil(nil, only_numbers_in_my_array?(["1","2","3","4","5","6","7","8","9","0"]))
     assert_equal(true, only_numbers_in_my_array?(["1","2","3","?","5","6","7","8","9","0"]))
     assert_equal(true, only_numbers_in_my_array?(["n","2","3","x","5","p","7","8","9","0"]))
   end
 end
 
-class TestIsbn10MathFunction< Minitest::Test
+class TestIsbn10MathFunction < Minitest::Test
   def test_for_10_digit_math
     assert_equal(true, valid_10_digit_isbn?(["0","4","7","1","9","5","8","6","9","7"]))
     assert_equal(false, valid_10_digit_isbn?(["1","4","7","1","9","5","8","6","9","7"]))
@@ -67,7 +67,7 @@ class TestIsbn10MathFunction< Minitest::Test
   end
 end
 
-class TestIsbn13MathFunction< Minitest::Test
+class TestIsbn13MathFunction < Minitest::Test
   def test_for_thirteen_character_math
     assert_equal(true, valid_13_digit_isbn?(["9","7","8","0","1","5","6","0","2","7","3","2","8"]))
     assert_equal(false, valid_13_digit_isbn?(["7","8","0","6","7","0","0","2","0","4","8","5"]))
@@ -78,16 +78,16 @@ class TestIsbn13MathFunction< Minitest::Test
   end
 end
 
-# class TestIsISBNvalid10Function< Minitest::Test
-#   def test_input_string_is_a_valid_isbn_for_10_degit
-#     assert_equal(false,valid_isbn?("0471958698"))
-#     assert_equal(true,valid_isbn?("0 4 7-1958697"))
-#     assert_equal(true,valid_isbn?("0471958697"))
-#     assert_equal(false,valid_isbn?("1471958697"))
-#     assert_equal(false,valid_isbn?("0312341613x"))
-#     assert_equal(true,valid_isbn?("87 71958 69X"))
-#     assert_equal(true,valid_isbn?("0-8044-2957-X"))
-#     assert_equal(true,valid_isbn?("0-9752298-0-X"))
+# class TestIsISBNvalid10Function < Minitest::Test
+#   def test_input_string_is_a_valid_isbn_for_10_digit
+#     assert_equal(false, valid_isbn?("0471958698"))
+#     assert_equal(true, valid_isbn?("0 4 7-1958697"))
+#     assert_equal(true, valid_isbn?("0471958697"))
+#     assert_equal(false, valid_isbn?("1471958697"))
+#     assert_equal(false, valid_isbn?("0312341613x"))
+#     assert_equal(true, valid_isbn?("87 71958 69X"))
+#     assert_equal(true, valid_isbn?("0-8044-2957-X"))
+#     assert_equal(true, valid_isbn?("0-9752298-0-X"))
 #   end
 # end
 
