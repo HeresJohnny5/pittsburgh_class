@@ -22,5 +22,3 @@ def coin_changer(coin)
 
   coin_hash
 end
-
-# puts coin_changer(100)
