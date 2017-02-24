@@ -28,4 +28,13 @@ class TestCoinChangerKata < Minitest::Test
     assert_equal({ :penny => 0, :nickel => 0, :dime => 2, :quarter => 0, :dollar => 0 }, coin_changer(20))
     assert_equal({ :penny => 4, :nickel => 0, :dime => 2, :quarter => 0, :dollar => 0 }, coin_changer(24))
   end
+
+  def test_responds_to_currency_hash_with_currency_greater_than_5_less_than_25
+    assert_equal({ :penny => 0, :nickel => 0, :dime => 0, :quarter => 1, :dollar => 0 }, coin_changer(25))
+    assert_equal({ :penny => 1, :nickel => 1, :dime => 0, :quarter => 1, :dollar => 0 }, coin_changer(31))
+    assert_equal({ :penny => 2, :nickel => 1, :dime => 1, :quarter => 2, :dollar => 0 }, coin_changer(67))
+    assert_equal({ :penny => 4, :nickel => 0, :dime => 0, :quarter => 3, :dollar => 0 }, coin_changer(79))
+    assert_equal({ :penny => 3, :nickel => 1, :dime => 0, :quarter => 3, :dollar => 0 }, coin_changer(83))
+    assert_equal({ :penny => 1, :nickel => 0, :dime => 2, :quarter => 3, :dollar => 0 }, coin_changer(96))
+  end
 end

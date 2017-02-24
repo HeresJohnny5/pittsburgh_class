@@ -2,7 +2,10 @@ def coin_changer(coin)
   coin_hash = { :penny => 0, :nickel => 0, :dime => 0, :quarter => 0, :dollar => 0 }
 
   while (coin > 0)
-    if coin >= 10
+    if coin >= 25
+      coin_hash[:quarter] += 1
+      coin = coin - 25
+    elsif coin >= 10
       coin_hash[:dime] += 1
       coin = coin - 10
     elsif coin >= 5
@@ -16,5 +19,3 @@ def coin_changer(coin)
 
   coin_hash
 end
-
-puts coin_changer(20)
