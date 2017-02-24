@@ -11,3 +11,31 @@ header {
   background-position: center;
   height: 100vh;
 }
+
+h1, p, .get-form { text-align: center; }
+
+h1, p { margin-bottom: 18px; }
+
+.submit, button {
+  border: 1px solid #008CBA;
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  color: #000;
+  font-family: lato;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.submit:hover, button:hover {
+  background-color: #008CBA;
+}
+
+.money {
+  text-align: center;
+  font-family: "Museo";
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
