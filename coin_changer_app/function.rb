@@ -3,7 +3,7 @@ def coin_changer(coin)
 
   while (coin > 0)
     if coin >= 5
-      coin_hash[:nickel] = coin - (coin - 1)
+      coin_hash[:nickel] += 1
       coin = coin - 5
     elsif coin > 0 && coin < 5
       coin_hash[:penny] = coin
@@ -14,4 +14,4 @@ def coin_changer(coin)
   coin_hash
 end
 
-puts coin_changer(10)
+# puts coin_changer(11)
