@@ -9,12 +9,14 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
 }
 
-h1, p, .get-form { text-align: center; }
+h1, p, .get-form, .return-cash { text-align: center; }
 
-h1, p { margin-bottom: 18px; }
+h1, p, header, .return-cash { margin-bottom: 18px; }
+
+.return-cash { font-size: 24px; }
 
 .submit, button {
   border: 1px solid #008CBA;
@@ -37,5 +39,16 @@ h1, p { margin-bottom: 18px; }
   font-size: 100px;
   text-transform: uppercase;
   color: #fff;
+  padding-top: 275px;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+button > a {
+  text-decoration: none;
+  color: #000;
 }

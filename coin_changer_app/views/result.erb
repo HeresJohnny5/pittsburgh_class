@@ -1,0 +1,9 @@
+<h1><%= user_name %> you asked for <%= user_money %> resulting in <%= change %>.</h1>
+
+<div class="return-cash">
+  <% high_to_low.each do |key, value| %>
+    <%= "#{key} = #{value}" %><br / />
+  <% end %>
+</div>
+
+<button type="button"><a href="/">Try Again</a></button>

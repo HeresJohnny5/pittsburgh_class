@@ -22,3 +22,14 @@ def coin_changer(coin)
 
   coin_hash
 end
+
+def return_coin(coin)
+  reverse_coin = coin.to_a.reverse
+  high_to_low = reverse_coin.to_h
+
+  high_to_low.each do |key, value|
+    "#{key} = #{value}"
+  end
+end
+
+# return_coin(coin_changer(325))
