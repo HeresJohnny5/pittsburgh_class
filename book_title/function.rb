@@ -19,4 +19,10 @@ class BookTitleKata
       new_title
   end
 
+  def correct_punctuation
+    new_title = updated_book_array
+    new_title[0] = new_title[0].capitalize
+
+    new_title.join(" ")
+  end
 end
