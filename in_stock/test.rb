@@ -13,19 +13,19 @@ class TestInStock < Minitest::Test
     item = 'BREAD'
     assert_equal(true, in_stock(grocery_store, item))
   end
-
+#
   def test_responds_to_hash_returns_true_for_item_chEeSe
     grocery_store = { 'bread' => 5, 'milk' => 3, 'cheese' => 2, 'chips' => 3, 'pop' => 2, 'frozen_pizza' => 4, 'tacos' => 0 }
     item = 'chEeSe'
     assert_equal(true, in_stock(grocery_store, item))
   end
-
+#
   def test_responds_to_hash_returns_false_for_item_tacos
     grocery_store = { 'bread' => 5, 'milk' => 3, 'cheese' => 2, 'chips' => 3, 'pop' => 2, 'frozen_pizza' => 4, 'tacos' => 0 }
     item = 'tacos'
     assert_equal(false, in_stock(grocery_store, item))
   end
-
+#
   def test_responds_to_hash_returns_false_for_item_hot_dogs
     grocery_store = { 'bread' => 5, 'milk' => 3, 'cheese' => 2, 'chips' => 3, 'pop' => 2, 'frozen_pizza' => 4, 'tacos' => 0 }
     item = 'hot_dogs'
