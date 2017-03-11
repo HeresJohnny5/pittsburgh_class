@@ -11,4 +11,9 @@ class TestBookTitle < Minitest::Test
     book_title = BookTitleKata.new("THE BLAIR WITCH PROJECT")
     assert_equal(["the", "Blair", "Witch", "Project"], book_title.updated_book_array)
   end
+
+  def test_responds_to_class_returns_new_array_the_Beautiful_and_the_Damned
+    book_title = BookTitleKata.new("the bEaUtiful AnD The daMnEd")
+    assert_equal(["the", "Beautiful", "and", "the", "Damned"], book_title.updated_book_array)
+  end
 end
