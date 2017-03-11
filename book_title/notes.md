@@ -6,6 +6,9 @@
 4. If words, "a", "and", "the", "of" are not the first word in the title they should be lowercase.
 
 >For example:
-"lORd OF The riNGS" should be "Lord of the Rings"
-"THE BLAIR WITCH PROJECT" should be "The Blair Witch Project"
-"the bEaUtiful AnD The daMnEd" should be "The Beautiful and the Damned"
+
+>"lORd OF The riNGS" should be "Lord of the Rings"
+
+>"THE BLAIR WITCH PROJECT" should be "The Blair Witch Project"
+
+>"the bEaUtiful AnD The daMnEd" should be "The Beautiful and the Damned"
